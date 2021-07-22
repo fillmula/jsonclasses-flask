@@ -1,0 +1,2 @@
+jsonclasses~=2.5.0
+flask[async]~=2.0
