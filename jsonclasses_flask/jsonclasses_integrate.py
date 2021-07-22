@@ -23,7 +23,7 @@ def jsonclasses_integrate(app: Flask,
         app.before_request(handle_cors_options)
         app.after_request(add_cors_headers)
     if operator is not None:
-        app.config['jsonclasses_operator_cls'] = operator.operator_cls
-        app.config['jsonclasses_encode_key'] = operator.encode_key
+        app.config['jsonclasses_operator_cls'] = operator['operator_cls']
+        app.config['jsonclasses_encode_key'] = operator['encode_key']
         app.before_request(set_operator)
     return app
