@@ -6,7 +6,7 @@ from .decode_jwt_token import decode_jwt_token
 
 async def set_operator():
     if 'authorization' not in request.headers:
-        g.current_user = None
+        g.operator = None
         return
     authorization = request.headers['authorization']
     token = authorization[7:]
