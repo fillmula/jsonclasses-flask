@@ -14,7 +14,4 @@ async def set_operator():
         decoded = decode_jwt_token(token)
     except DecodeError:
         raise Unauthorized('Authorization token is invalid.')
-    operator_id = decoded['operator_id']
-    operator_cls = current_app.config['operator_cls']
-    operator = await operator_cls.id(operator_id)
-    g.operator = operator
+    g.operator = decoded
