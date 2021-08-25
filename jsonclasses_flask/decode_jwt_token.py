@@ -8,3 +8,4 @@ def decode_jwt_token(token: str) -> JSONClassObject:
     id = decode(token, key, algorithms=['HS256'])['operator']
     cls = current_app.config['jsonclasses_operator_cls']
     return cls.id(id).exec()
+
