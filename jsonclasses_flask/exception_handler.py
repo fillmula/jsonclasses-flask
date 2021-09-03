@@ -3,10 +3,10 @@ from os import getcwd, path
 from traceback import extract_tb, print_exception
 from flask import Response, jsonify, current_app
 from werkzeug.exceptions import HTTPException
-from jsonclasses.exceptions import (ObjectNotFoundException,
-                                    ValidationException,
-                                    UniqueConstraintException,
-                                    UnauthorizedActionException)
+from jsonclasses.excs import (ObjectNotFoundException,
+                              ValidationException,
+                              UniqueConstraintException,
+                              UnauthorizedActionException)
 from .remove_none import remove_none
 
 
