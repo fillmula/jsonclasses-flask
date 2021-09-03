@@ -1,7 +1,7 @@
 from flask import request, g, current_app
 from werkzeug.exceptions import Unauthorized
 from jwt import DecodeError
-from jsonclasses.exceptions import ObjectNotFoundException
+from jsonclasses.excs import ObjectNotFoundException
 from .decode_jwt_token import decode_jwt_token
 
 

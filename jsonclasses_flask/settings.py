@@ -1,5 +1,5 @@
 from typing import TypedDict, Optional
-from jsonclasses.jsonclass_object import JSONClassObject
+from jsonclasses.jobject import JObject
 
 class CorsSetting(TypedDict):
     allow_headers: Optional[str]
@@ -8,5 +8,5 @@ class CorsSetting(TypedDict):
 
 
 class OperatorSetting(TypedDict):
-    operator_cls: type[JSONClassObject]
+    operator_cls: type[JObject]
     encode_key: str
