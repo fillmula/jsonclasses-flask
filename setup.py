@@ -8,7 +8,7 @@ HERE = Path(__file__).parent
 README = (HERE / "README.md").read_text()
 
 setup(name='jsonclasses-flask',
-      version='2.6.0',
+      version='2.6.1',
       description='JSONClasses integration with Flask',
       long_description=README,
       long_description_content_type="text/markdown",
@@ -20,4 +20,5 @@ setup(name='jsonclasses-flask',
       zip_safe=False,
       url='https://github.com/fillmula/jsonclasses-flask',
       include_package_data=True,
-      python_requires='>=3.9')
+      python_requires='>=3.9',
+      install_requires=['pyjwt>=2.1.0,<3.0.0'])
