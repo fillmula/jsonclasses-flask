@@ -8,7 +8,7 @@ HERE = Path(__file__).parent
 README = (HERE / "README.md").read_text()
 
 setup(name='jsonclasses-flask',
-      version='2.6.1',
+      version='2.7.5',
       description='JSONClasses integration with Flask',
       long_description=README,
       long_description_content_type="text/markdown",
