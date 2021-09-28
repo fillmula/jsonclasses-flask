@@ -14,7 +14,7 @@ async def set_operator():
     try:
         decoded = decode_jwt_token(token)
     except DecodeError:
-        raise Unauthorized('Authorization token is invalid.')
+        raise Unauthorized('authorization token is invalid')
     except ObjectNotFoundException:
-        raise Unauthorized('User is not authorized.')
+        raise Unauthorized('user is not authorized')
     g.operator = decoded
